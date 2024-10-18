@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="app">
-      <change afterPath="$PROJECT_DIR$/controllers/main_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main_screen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/product_card.py" afterDir="false" />
+    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Creada clase de estilos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_screen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,11 +96,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729097190213</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Creada clase de estilos">
+      <option name="closed" value="true" />
+      <created>1729237446834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729237446834</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app" />
-    <option name="LAST_COMMIT_MESSAGE" value="app" />
+    <MESSAGE value="Creada clase de estilos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creada clase de estilos" />
   </component>
 </project>

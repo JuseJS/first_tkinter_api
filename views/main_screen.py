@@ -13,6 +13,17 @@ class MainScreen(ttk.Frame):
         AppStyles(self)
         self.style = ttk.Style()
 
-        ttk.Frame(self, style='TFrame').pack(expand=True, fill= "both")
+        # Frame principal de la ventana
+        main_frame = ttk.Frame(self, style='TFrame')
+        main_frame.pack(expand=True, fill= "both")
+
+        # Titulo de la ventana
+        title = ttk.Label(main_frame,text="Listado de Productos", style="Title.TLabel", anchor="e", justify="center")
+        title.place(x= 0, y=20, width=500)
+        title.update_idletasks()
+        print(title.winfo_height())
+        # Barra de busqueda
+        ttk.Entry(main_frame, style="Search.TEntry").place(x= 625, y=20, width=300, height=30)
+
         self.pack(expand=True, fill= "both")
 
