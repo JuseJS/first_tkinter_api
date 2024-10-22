@@ -5,11 +5,11 @@ from views.main_screen import MainScreen
 
 
 class MainApp(tk.Tk):
-    def __init__(self, title, size, controller):
+    def __init__(self, title, size):
         super().__init__()
         self.title(title)
         self.geometry(size)
 
-        self.main_screen = MainScreen(self, controller)
+        self.main_screen = MainScreen(self)
         self.mainloop()
 

@@ -2,6 +2,7 @@ import requests
 from models.api_response import APIResponse
 from dataclass_wizard import fromdict
 
+
 class APIController:
     _api_data = None
 
@@ -15,3 +16,8 @@ class APIController:
             else:
                 cls._api_data = None
         return cls._api_data
+
+    def show_products_cards(self, products_frame):
+        for product in self._api_data.products:
+            product_card = ProductCard(products_frame, product)
+            product_card.pack(side="left", padx=(10, 10), pady=(10, 10))
