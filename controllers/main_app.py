@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 
-from views.app_styles import AppStyles
 from views.main_screen import MainScreen
 
 
@@ -14,6 +13,3 @@ class MainApp(tk.Tk):
         self.main_screen = MainScreen(self)
         self.mainloop()
 
-def show_frame(self, cont):
-    frame = self.frames[cont]
-    frame.tkraise()

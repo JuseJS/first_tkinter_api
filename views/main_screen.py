@@ -8,7 +8,6 @@ from views.product_card import ProductCard
 class MainScreen(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
-
         # Cargamos Los estilos
         AppStyles(self)
         self.style = ttk.Style()

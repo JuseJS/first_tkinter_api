@@ -2,15 +2,23 @@ import tkinter as tk
 
 from tkinter import ttk
 
-class ProductCard(tk.Frame):
-    def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="This is the Side Page")
-        label.pack(padx=10, pady=10)
+from views.app_styles import AppStyles
 
-        switch_window_button = tk.Button(
-            self,
-            text="Go to the Completion Screen",
-            command=lambda: controller.show_frame(MainScreen),
-        )
-        switch_window_button.pack(side="bottom", fill=tk.X)
+class ProductCard(ttk.Frame):
+    def __init__(self, parent, product):
+        super().__init__(parent)
+
+        # Cargamos Los estilos
+        AppStyles(self)
+        self.style = ttk.Style()
+
+        # Frame principal de la ventana
+        main_frame = ttk.Frame(self, style='TFrame')
+        main_frame.pack(expand=True, fill= "both")
+
+        # Titulo de la ventana
+        title = ttk.Label(main_frame,text=product.title, style="Title.TLabel", anchor="e", justify="center")
+        title.pack()
+
+        self.pack(expand=True, fill= "both")
+
