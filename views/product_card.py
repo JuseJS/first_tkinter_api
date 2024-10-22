@@ -1,7 +1,6 @@
 from tkinter import ttk
-
+from PIL import Image, ImageTk
 from controllers.img_controller import ImgController
-
 
 class ProductCard(ttk.Frame):
     def __init__(self, parent, product):
@@ -9,18 +8,16 @@ class ProductCard(ttk.Frame):
         self.product = product
         self.configure(style="ProductCard.TFrame")
 
-        # Obtener la imagen
-        self.image = ImgController.download_image(self.product.images[0])
-
-        # Imagen
-        self.image_label = ttk.Label(self, image=self.image, style="ProductCard.TLabel")
+        # Imagen de carga
+        self.loading_image = ImageTk.PhotoImage(Image.new('RGB', (300, 300), (200, 200, 200)))
+        self.image_label = ttk.Label(self, image=self.loading_image, style="ProductCard.TLabel")
         self.image_label.pack()
 
-        # Titulo
+        # Título
         self.title_label = ttk.Label(self, text=self.product.title, style="ProductCardTitle.TLabel")
         self.title_label.pack(pady=(5, 0))
 
-        # Descripcion
+        # Descripción
         self.description_label = ttk.Label(self, text=self.product.description, style="ProductCardDesc.TLabel", wraplength=180)
         self.description_label.pack(pady=(2, 5))
 
@@ -30,6 +27,8 @@ class ProductCard(ttk.Frame):
         self.title_label.bind("<Button-1>", self.on_click)
         self.description_label.bind("<Button-1>", self.on_click)
 
+        # Carga imagen y la actualiza
+        ImgController.update_image_label(self.image_label, self.product.images[0])
+
     def on_click(self, event):
         print(f"Hola {self.product.title}")
-

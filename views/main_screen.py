@@ -24,11 +24,11 @@ class MainScreen(ttk.Frame):
 
         # Seccion Productos
         products_frame = ttk.Frame(main_frame, style='Section.TFrame')
-        products_frame.place(x=50, y=80, width=900, height=500)
+        products_frame.place(x=50, y=80, width=1500, height=500)
 
         for product in controller.products:
             product_card = ProductCard(products_frame, product)
-            product_card.pack(side="top", pady=10, padx=10, anchor="w")
+            product_card.pack(side="left", pady=10, padx=10, anchor="w")
 
         self.pack(expand=True, fill= "both")
 
