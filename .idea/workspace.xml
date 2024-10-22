@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Modificada pantalla principal">
+    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/controllers/api_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/img_controller.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/controllers/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/app_colors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/main_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_screen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/product_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_card.py" afterDir="false" />
     </list>
@@ -115,13 +119,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729241361292</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <option name="closed" value="true" />
+      <created>1729582970735</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729582970735</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="app" />
     <MESSAGE value="Creada clase de estilos" />
     <MESSAGE value="Modificada pantalla principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificada pantalla principal" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

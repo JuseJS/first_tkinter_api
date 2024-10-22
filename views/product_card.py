@@ -1,24 +1,35 @@
-import tkinter as tk
-
 from tkinter import ttk
 
-from views.app_styles import AppStyles
+from controllers.img_controller import ImgController
+
 
 class ProductCard(ttk.Frame):
     def __init__(self, parent, product):
         super().__init__(parent)
+        self.product = product
+        self.configure(style="ProductCard.TFrame")
 
-        # Cargamos Los estilos
-        AppStyles(self)
-        self.style = ttk.Style()
+        # Obtener la imagen
+        self.image = ImgController.download_image(self.product.images[0])
 
-        # Frame principal de la ventana
-        main_frame = ttk.Frame(self, style='TFrame')
-        main_frame.pack(expand=True, fill= "both")
+        # Imagen
+        self.image_label = ttk.Label(self, image=self.image, style="ProductCard.TLabel")
+        self.image_label.pack()
 
-        # Titulo de la ventana
-        title = ttk.Label(main_frame,text=product.title, style="Title.TLabel", anchor="e", justify="center")
-        title.pack()
+        # Titulo
+        self.title_label = ttk.Label(self, text=self.product.title, style="ProductCardTitle.TLabel")
+        self.title_label.pack(pady=(5, 0))
 
-        self.pack(expand=True, fill= "both")
+        # Descripcion
+        self.description_label = ttk.Label(self, text=self.product.description, style="ProductCardDesc.TLabel", wraplength=180)
+        self.description_label.pack(pady=(2, 5))
+
+        # Hacer que el card sea clicable
+        self.bind("<Button-1>", self.on_click)
+        self.image_label.bind("<Button-1>", self.on_click)
+        self.title_label.bind("<Button-1>", self.on_click)
+        self.description_label.bind("<Button-1>", self.on_click)
+
+    def on_click(self, event):
+        print(f"Hola {self.product.title}")
 
