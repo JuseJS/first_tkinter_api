@@ -18,17 +18,17 @@ class MainScreen(ttk.Frame):
 
         # Titulo de la ventana
         title = ttk.Label(main_frame,text="Listado de Productos", style="Title.TLabel", anchor="e", justify="center")
-        title.place(x= 0, y=20, width=500)
+        title.place(x= 0, y=20, width=600)
         # Barra de busqueda
         ttk.Entry(main_frame, style="Search.TEntry").place(x= 625, y=20, width=300, height=30)
 
         # Seccion Productos
         products_frame = ttk.Frame(main_frame, style='Section.TFrame')
-        products_frame.place(x=50, y=80, width=1500, height=500)
+        products_frame.place(x=50, y=80, width=1500, height=540)
 
         for product in controller.products:
             product_card = ProductCard(products_frame, product)
-            product_card.pack(side="left", pady=10, padx=10, anchor="w")
+            product_card.pack(side="left", padx=(10, 10), pady=(10, 10), anchor="w")
 
         self.pack(expand=True, fill= "both")
 
