@@ -39,3 +39,10 @@ class AppStyles:
                                         font=("Helvetica", 10),
                                         foreground=AppColors.product_card_description,
                                         background=AppColors.product_card_bg)
+
+        # ScrollBar
+        window_to_style.style.configure("TScrollbar",
+                                        background=AppColors.scrollbar_bg,
+                                        troughcolor=AppColors.scrollbar_tg,
+                                        bordercolor=AppColors.scrollbar_border,
+                                        arrowcolor=AppColors.scrollbar_arrow)

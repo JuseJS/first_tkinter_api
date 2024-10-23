@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Actualizada vista ProductCard">
+    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Extraido codigo de vista y añadido controlador product.py">
+      <change afterPath="$PROJECT_DIR$/views/product_screen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/api_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/main_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/product_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/main_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/main_screen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_card.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.api_controller.executor": "Run",
     "Python.api_response.executor": "Run",
     "Python.main.executor": "Run",
     "Python.main_app.executor": "Run",
@@ -59,12 +63,13 @@
     "Python.product_card.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/navarro/PycharmProjects/first_tkinter_api/views",
+    "last_opened_file_path": "/home/navarro/PycharmProjects/first_tkinter_api/controllers",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/controllers" />
       <recent name="$PROJECT_DIR$/views" />
     </key>
   </component>
@@ -148,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729634084116</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Extraido codigo de vista y añadido controlador product.py">
+      <option name="closed" value="true" />
+      <created>1729635697705</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1729635697705</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +172,7 @@
     <MESSAGE value="modificadas cards y añadida carga de imagen provisional" />
     <MESSAGE value="Actualizado carga de imagen de producto de forma asincrona, para evitar cuelgue en la aplicacion" />
     <MESSAGE value="Actualizada vista ProductCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actualizada vista ProductCard" />
+    <MESSAGE value="Extraido codigo de vista y añadido controlador product.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extraido codigo de vista y añadido controlador product.py" />
   </component>
 </project>

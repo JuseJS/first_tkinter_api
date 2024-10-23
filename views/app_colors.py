@@ -26,3 +26,9 @@ class AppColors:
     product_card_title = "#FFFFFF",
     product_card_img_bg = "#424242",
     product_card_description = "#BDBDBD",
+
+    # Colores ScrollBar
+    scrollbar_bg = "#424242"
+    scrollbar_arrow = "#FF9800"
+    scrollbar_border = "#2C2C2E"
+    scrollbar_tg = "#1E1E1E"

@@ -1,11 +1,15 @@
+from itertools import product
 from tkinter import ttk
 from PIL import Image, ImageTk
 from controllers.img_controller import ImgController
+from views.product_screen import ProductScreen
+
 
 class ProductCard(ttk.Frame):
-    def __init__(self, parent, product):
+    def __init__(self, parent, product, controller):
         super().__init__(parent)
         self.product = product
+        self.controller = controller
         self.configure(style="ProductCard.TFrame",
                        width=360,
                        height=520)
@@ -34,4 +38,4 @@ class ProductCard(ttk.Frame):
         ImgController.update_image_label(self.image_label, self.product.images[0])
 
     def on_click(self, event):
-        print(f"Hola {self.product.title}")
+        self.controller.show_frame(ProductScreen, self.product)
