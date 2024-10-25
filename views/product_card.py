@@ -1,4 +1,3 @@
-from itertools import product
 from tkinter import ttk
 from PIL import Image, ImageTk
 from controllers.img_controller import ImgController
@@ -16,7 +15,7 @@ class ProductCard(ttk.Frame):
         self.pack_propagate(False)
 
         # Imagen de carga
-        self.loading_image = ImageTk.PhotoImage(Image.new('RGB', (300, 300), (200, 200, 200)))
+        self.loading_image = ImageTk.PhotoImage(Image.new('RGB', (300, 300), (44, 44, 46)))
         self.image_label = ttk.Label(self, image=self.loading_image, style="ProductCard.TLabel")
         self.image_label.pack(padx=(20, 20), pady=(20, 10))
 
@@ -33,6 +32,11 @@ class ProductCard(ttk.Frame):
         self.image_label.bind("<Button-1>", self.on_click)
         self.title_label.bind("<Button-1>", self.on_click)
         self.description_label.bind("<Button-1>", self.on_click)
+
+        precio_con_descuento = self.product.price * (1 - (self.product.discount_percentage / 100))
+        precio_con_descuento = round(precio_con_descuento, 2)
+        print("Precio original: " , self.product.price , "% descuento: " , self.product.discount_percentage)
+        print("Precio rebajado: " , precio_con_descuento)
 
         # Carga imagen y la actualiza
         ImgController.update_image_label(self.image_label, self.product.images[0])

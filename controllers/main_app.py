@@ -1,6 +1,7 @@
 import tkinter as tk
 
 from views.main_screen import MainScreen
+from views.product_screen import ProductScreen
 
 
 class MainApp(tk.Tk):
@@ -22,10 +23,14 @@ class MainApp(tk.Tk):
         self.mainloop()
 
     def show_frame(self, cont, *args, **kwargs):
-        if cont not in self.frames:
+        if cont == ProductScreen:
             frame = cont(self.container, self, *args, **kwargs)
-            self.frames[cont] = frame
             frame.place(x=0, y=0, relwidth=1, relheight=1)
+        else:
+            if cont not in self.frames:
+                frame = cont(self.container, self, *args, **kwargs)
+                self.frames[cont] = frame
+                frame.place(x=0, y=0, relwidth=1, relheight=1)
+            frame = self.frames[cont]
 
-        frame = self.frames[cont]
         frame.tkraise()

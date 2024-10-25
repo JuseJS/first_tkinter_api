@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Modificado controlador principal para implementar funcionamiento con screens">
+    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="Modificado cmabiado de screens">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/main_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/main_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_card.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/product_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_screen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729687169368</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Modificado cmabiado de screens">
+      <option name="closed" value="true" />
+      <created>1729755485106</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729755485106</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +187,7 @@
     <MESSAGE value="Actualizada vista ProductCard" />
     <MESSAGE value="Extraido codigo de vista y añadido controlador product.py" />
     <MESSAGE value="Modificado controlador principal para implementar funcionamiento con screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificado controlador principal para implementar funcionamiento con screens" />
+    <MESSAGE value="Modificado cmabiado de screens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificado cmabiado de screens" />
   </component>
 </project>

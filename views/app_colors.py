@@ -1,6 +1,3 @@
-from tkinter import ttk
-
-
 class AppColors:
     # Colores generales de la app
     main_bg = "#121212",
@@ -14,8 +11,11 @@ class AppColors:
 
     # Colores Botones
     btn_bg = "#333333",
+    btn_hover_bg = "#424242",
+    btn_pressed_bg = "#555555",
     btn_text = "#E0E0E0",
-    btn_hover = "#3D3D3D",
+    btn_hover_text = "#FFFFFF",
+    btn_pressed_text = "#FF9800",
 
     # Colores entrys
     entry_bg = "#262626",

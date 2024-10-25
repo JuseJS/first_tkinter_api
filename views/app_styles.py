@@ -10,14 +10,31 @@ class AppStyles:
         window_to_style.style.theme_use('default')
         window_to_style.style.configure('TFrame',
                                         background=AppColors.main_bg)
+
         window_to_style.style.configure('Section.TFrame',
                                         background=AppColors.section_bg)
+
+        # Estilos botones
+        window_to_style.style.configure('TButton',
+                                        font=('helvetica', '14'),
+                                        background=AppColors.btn_bg,
+                                        foreground=AppColors.btn_text,
+                                        anchor="center",
+                                        padding=10,
+                                        relief="flat")
+
+        window_to_style.style.map('TButton',
+                                  foreground=[('pressed', AppColors.btn_pressed_text),
+                                              ('active', AppColors.btn_hover_text)],
+                                  background=[('pressed', AppColors.btn_pressed_bg),
+                                              ('active', AppColors.btn_hover_bg)])
 
         # Estilo titulos
         window_to_style.style.configure('Title.TLabel',
                                         font=('helvetica', '20', "bold"),
                                         foreground=AppColors.title,
                                         background=AppColors.main_bg)
+
         # Estilo barra de busqueda
         window_to_style.style.configure('Search.TEntry',
                                         font=('helvetica', '14'),
@@ -46,3 +63,6 @@ class AppStyles:
                                         troughcolor=AppColors.scrollbar_tg,
                                         bordercolor=AppColors.scrollbar_border,
                                         arrowcolor=AppColors.scrollbar_arrow)
+
+        # Estilos para ProductInfo
+
