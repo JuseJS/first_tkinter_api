@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="cambios varios">
-      <change afterPath="$PROJECT_DIR$/models/empresa.py" afterDir="false" />
+    <list default="true" id="3edacbc2-6d13-4090-a4ea-105bb67bd859" name="Changes" comment="creada clase empresa.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/app_styles.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/app_styles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product_card.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_card.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/product_screen.py" beforeDir="false" afterPath="$PROJECT_DIR$/views/product_screen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.api_controller.executor": "Run",
-    "Python.api_response.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.main_app.executor": "Run",
-    "Python.main_screen.executor": "Run",
-    "Python.product_card.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/navarro/PycharmProjects/first_tkinter_api/models",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.api_controller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.api_response.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main_screen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.product_card.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/navarro/PycharmProjects/first_tkinter_api/models&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/models" />
@@ -179,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729843545404</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="creada clase empresa.py">
+      <option name="closed" value="true" />
+      <created>1729845815286</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1729845815286</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,7 +204,8 @@
     <MESSAGE value="Modificado controlador principal para implementar funcionamiento con screens" />
     <MESSAGE value="Modificado cmabiado de screens" />
     <MESSAGE value="cambios varios" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambios varios" />
+    <MESSAGE value="creada clase empresa.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="creada clase empresa.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

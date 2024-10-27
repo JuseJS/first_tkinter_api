@@ -33,11 +33,6 @@ class ProductCard(ttk.Frame):
         self.title_label.bind("<Button-1>", self.on_click)
         self.description_label.bind("<Button-1>", self.on_click)
 
-        precio_con_descuento = self.product.price * (1 - (self.product.discount_percentage / 100))
-        precio_con_descuento = round(precio_con_descuento, 2)
-        print("Precio original: " , self.product.price , "% descuento: " , self.product.discount_percentage)
-        print("Precio rebajado: " , precio_con_descuento)
-
         # Carga imagen y la actualiza
         ImgController.update_image_label(self.image_label, self.product.images[0])
 

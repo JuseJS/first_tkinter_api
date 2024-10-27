@@ -65,4 +65,41 @@ class AppStyles:
                                         arrowcolor=AppColors.scrollbar_arrow)
 
         # Estilos para ProductInfo
+        window_to_style.style.configure("ProductInfo.TFrame",
+                                        background=AppColors.main_bg,
+                                        padding=15)
+        window_to_style.style.configure("ProductCategory.TLabel",
+                                        font=('Helvetica', 18, 'bold', 'italic'),
+                                        foreground=AppColors.important_text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductInfoTitle.TLabel",
+                                        font=('Helvetica', 16, 'bold'),
+                                        foreground=AppColors.title,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductInfoText.TLabel",
+                                        font=('Helvetica', 14),
+                                        foreground=AppColors.text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductInfoHighlight.TLabel",
+                                        font=('Helvetica', 14, 'italic'),
+                                        foreground=AppColors.link_text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductReview.TLabel",
+                                        font=('Helvetica', 12),
+                                        foreground=AppColors.text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductReviewRating.TLabel",
+                                        font=('Helvetica', 12, 'bold'),
+                                        foreground=AppColors.btn_pressed_text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductAdditionalInfo.TLabel",
+                                        font=('Helvetica', 13),
+                                        foreground=AppColors.text,
+                                        background=AppColors.main_bg)
+        window_to_style.style.configure("ProductInfoImage.TLabel",
+                                        background=AppColors.product_card_img_bg)
+        window_to_style.style.configure("ProductInfoDimensions.TLabel",
+                                        font=('Helvetica', 11),
+                                        foreground=AppColors.text,
+                                        background=AppColors.main_bg)
 
